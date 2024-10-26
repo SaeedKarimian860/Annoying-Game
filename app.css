@@ -1,7 +1,25 @@
-button {
+/*css styling for Annoying button game
+ button {
     position: absolute;
     top: 10px;
     left: 10px;
     height: 50px;
     width: 100px;
+}*/ 
+
+
+/* css styling for multiple events/event object
+#boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.box {
+    width: 200px;
+    height: 200px;
+
+}
+h1 {
+    text-align: center;
+} */
+
