@@ -71,32 +71,34 @@
 
 
 
+//Key Events (keypress, keyup, keydown)
+// const input = document.querySelector('#username');
 
-const input = document.querySelector('#username');
+// input.addEventListener('keydown', function (e) {
+//     console.log('KEY DOWN!');
+// });
 
-input.addEventListener('keydown', function (e) {
-    console.log('KEY DOWN!');
-});
+// input.addEventListener('keyup', function (e) {
+//     console.log('KEY UP!');
+// });
 
-input.addEventListener('keyup', function (e) {
-    console.log('KEY UP!');
-});
+// input.addEventListener('keypress', function (e) {
+//     console.log('KEY PRESS!');
+// });
 
-input.addEventListener('keypress', function (e) {
-    console.log('KEY PRESS!');
-});
+// const addItemInput = document.querySelector('#addItem');
+// const itemsUl = document.querySelector('#items');
 
-const addItemInput = document.querySelector('#addItem');
-const itemsUl = document.querySelector('#items');
+// addItemInput.addEventListener('keypress', function(e){
+//     if (e.key === 'Enter') {
+//         if (!this.value) return;
+//         //add a new item to list
+//         const newItemText = this.value;
+//         const newItem = document.createElement('li');
+//         newItem.innerText = newItemText;
+//         itemsUl.appendChild(newItem);
+//         this.value = '';
+//     }
+// });
 
-addItemInput.addEventListener('keypress', function(e){
-    if (e.key === 'Enter') {
-        if (!this.value) return;
-        //add a new item to list
-        const newItemText = this.value;
-        const newItem = document.createElement('li');
-        newItem.innerText = newItemText;
-        itemsUl.appendChild(newItem);
-        this.value = '';
-    }
-});
+
