@@ -23,17 +23,25 @@ const termsCheckbox = document.querySelector('#terms');
 const veggieSelect = document.querySelector('#veggies');
 
 const formData = {};
-creditCardInput.addEventListener('input', (e) => {
-    console.log('CC CHANGED!', e);
-    formData['cc'] = e.target.value;
-});
+for (let input of [creditCardInput, termsCheckbox, veggieSelect]) {
+    input.addEventListener('input', ({target}) => {
+        const {name, type, value, checked} = target;
+        formData[name] = type === 'checkbox' ? checked : value;
+        console.log(formData);
+    });
+}
 
-veggieSelect.addEventListener('input', (e) => {
-    console.log('VEGGIE CHANGED!', e);
-    formData['veggies'] = e.target.value;
-});
+// creditCardInput.addEventListener('input', (e) => {
+//     console.log('CC CHANGED!', e);
+//     formData['cc'] = e.target.value;
+// });
 
-termsCheckbox.addEventListener('input', (e) => {
-    console.log('CHECKBOX', e);
-    formData['agreedToTerms'] = e.target.checked;
-});
+// veggieSelect.addEventListener('input', (e) => {
+//     console.log('VEGGIE CHANGED!', e);
+//     formData['veggies'] = e.target.value;
+// });
+
+// termsCheckbox.addEventListener('input', (e) => {
+//     console.log('CHECKBOX', e);
+//     formData['agreedToTerms'] = e.target.checked;
+// });
